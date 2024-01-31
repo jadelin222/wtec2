@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+/* .bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+} */
+#smallVideo {
+  width: 1080px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#video1, #video2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 50%;  /* each video covers half the width */
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#video2 {
+  left: 50%;  /* position the second video to the right of the first one */
+}
